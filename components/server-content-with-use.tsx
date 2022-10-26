@@ -5,13 +5,13 @@ import { getData } from "../service/api";
 // In theory, I don't think this should work? But it seems to be working fine (better than the async/await even)
 export const ServerContentWithUse = () => {
   const data = use(getData()) as {
-    name: string;
+    title: string;
   };
 
   return (
     <p>
       Server component with use():{" "}
-      <span className="text-red-600 font-semibold">{data.name}</span>
+      <span className="text-red-600 font-semibold">{data.title}</span>
     </p>
   );
 };

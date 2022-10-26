@@ -1,12 +1,6 @@
 // Fake API service, having 1000ms delay
 export const getData = async () => {
-  return new Promise((resolve) => {
-    setTimeout(
-      () =>
-        resolve({
-          name: "Hello from fake server",
-        }),
-      1000
-    );
-  });
+  return fetch("https://jsonplaceholder.typicode.com/todos/1").then((res) =>
+    res.json()
+  );
 };
