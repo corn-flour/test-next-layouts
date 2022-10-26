@@ -99,6 +99,15 @@ export default function Home() {
         </Link>
       </section>
       <section>
+        <h2 className="text-2xl font-bold">Client side fetching with SWR</h2>
+        <p className="text-sm text-gray-600">
+          This is (actual) client side fetching with SWR.
+        </p>
+        <Link href="/swr" className="text-blue-600 hover:text-blue-800">
+          Go to page
+        </Link>
+      </section>
+      <section>
         <h2 className="text-2xl font-bold">Client side fetching with tRPC</h2>
         <p className="text-sm text-gray-600">
           This is also an (actual) client side fetching with tRPC. The layout of
