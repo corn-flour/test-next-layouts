@@ -5,9 +5,12 @@ type Data = {
   name: string
 }
 
+// Add 1000ms delay to make api calls noticeable
 export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  res.status(200).json({ name: "Hello from API" });
+  setTimeout(() => {
+    res.status(200).json({ name: "Hello from API" });
+  }, 1000);
 }

@@ -1,6 +1,6 @@
+import Link from "next/link";
 import { ClientAPIContent } from "../components/client-api-content";
 import { ServerAPIContent } from "../components/server-api-content";
-import { ServerFetchOnReq } from "../components/server-api-fetch-on-req";
 import { ServerContentWithUse } from "../components/server-content-with-use";
 
 export default function Home() {
@@ -28,9 +28,19 @@ export default function Home() {
 
       <section>
         <h2 className="text-2xl font-bold">Server fetch on request</h2>
-        {/**
-         * @ts-ignore */}
-        <ServerFetchOnReq />
+
+        <Link href="/ssr" className="text-blue-600 hover:text-blue-800">
+          Go to page
+        </Link>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-bold">Client side fetching with RQ</h2>
+        <Link
+          href="/client-fetch"
+          className="text-blue-600 hover:text-blue-800">
+          Go to page
+        </Link>
       </section>
     </div>
   );
