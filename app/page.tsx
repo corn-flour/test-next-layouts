@@ -73,24 +73,32 @@ export default function Home() {
           Go to page
         </Link>
       </section>
-
+      <section>
+        <h2 className="text-2xl font-bold">
+          Client side fetching with useEffect
+        </h2>
+        <p className="text-sm text-gray-600">
+          This is classic client side fetching with useEffect().
+        </p>
+        <Link href="/use-effect" className="text-blue-600 hover:text-blue-800">
+          Go to page
+        </Link>
+      </section>
       <section>
         <h2 className="text-2xl font-bold">Client side fetching with RQ</h2>
         <p className="text-sm text-gray-600">
           This is (actual) client side fetching with react query. The layout of
           it is also a client component since it needs context.
         </p>
-        <Link
-          href="/client-fetch"
-          className="text-blue-600 hover:text-blue-800">
+        <Link href="/react-query" className="text-blue-600 hover:text-blue-800">
           Go to page
         </Link>
       </section>
       <section>
         <h2 className="text-2xl font-bold">Client side fetching with tRPC</h2>
         <p className="text-sm text-gray-600">
-          This is also an (actual) client side fetching with react query. The
-          layout of it is also a client component since it needs context.
+          This is also an (actual) client side fetching with tRPC. The layout of
+          it is also a client component since it needs context.
         </p>
         <p className="text-sm text-gray-600">
           It is set up with the{" "}
