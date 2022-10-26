@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { ClientAPIContent } from "../components/client-api-content";
 import { ClientWithStates } from "../components/client-with-states";
 import { ServerAPIContent } from "../components/server-api-content";
 import { ServerContentWithUse } from "../components/server-content-with-use";

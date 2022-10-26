@@ -9,6 +9,7 @@ const fetchData = async () =>
   }).then((res) => res.json());
 
 export const RQFetch = () => {
+  console.log(`test RQ: ${getBaseUrl()}/api/hello`);
   const { data } = useQuery(["fetchdata"], fetchData);
 
   if (!data) return <div>RQ loading...</div>;
