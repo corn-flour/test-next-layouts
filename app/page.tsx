@@ -78,6 +78,17 @@ export default function Home() {
         </Link>
       </section>
       <section>
+        <h2 className="text-2xl font-bold">Server fetch with Pokeapi</h2>
+
+        <p className="text-sm text-gray-600">
+          Apparently this fails to work. The fetch fails to parse to json on
+          server.
+        </p>
+        <Link href="/pokeapi" className="text-blue-600 hover:text-blue-800">
+          Go to page
+        </Link>
+      </section>
+      <section>
         <h2 className="text-2xl font-bold">
           Client side fetching with useEffect
         </h2>
