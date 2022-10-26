@@ -8,5 +8,10 @@ export const ServerContentWithUse = () => {
     name: string;
   };
 
-  return <p>Server component with use(): {data.name}</p>;
+  return (
+    <p>
+      Server component with use():{" "}
+      <span className="text-red-600 font-semibold">{data.name}</span>
+    </p>
+  );
 };

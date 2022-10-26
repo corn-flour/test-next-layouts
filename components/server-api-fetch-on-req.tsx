@@ -11,5 +11,9 @@ export const ServerFetchOnReq = async () => {
     name: string;
   };
 
-  return <p>SSR Fetch: {data.name}</p>;
+  return (
+    <p>
+      SSR Fetch: <span className="text-red-600 font-semibold">{data.name}</span>
+    </p>
+  );
 };

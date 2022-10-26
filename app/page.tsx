@@ -6,8 +6,14 @@ import { ServerContentWithUse } from "../components/server-content-with-use";
 export default function Home() {
   return (
     <div className="space-y-8">
-      <h1 className="text-4xl font-bold">This is the home page!</h1>
-
+      <div>
+        <h1 className="text-4xl font-bold">This is the home page!</h1>
+        <p className="text-sm text-gray-600">
+          Despite having component that requests data in this page, they should
+          all be static on build. The root loading component will only be shown
+          on dev.
+        </p>
+      </div>
       <section>
         <h2 className="text-2xl font-bold">Server API with async</h2>
         <p className="text-sm text-gray-600">
@@ -37,7 +43,7 @@ export default function Home() {
         </p>
         <p className="text-sm text-gray-600">
           It currently does not work with actual fetch() though, which will
-          cause infinite network calls
+          cause infinite network calls. This might be why this becomes static?
         </p>
         <ClientAPIContent />
       </section>

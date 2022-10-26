@@ -5,5 +5,10 @@ export const ServerAPIContent = async () => {
   const { name } = (await getData()) as {
     name: string;
   };
-  return <p>Server component response: {name}</p>;
+  return (
+    <p>
+      Server component response:{" "}
+      <span className="text-red-600 font-semibold">{name}</span>
+    </p>
+  );
 };

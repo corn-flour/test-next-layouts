@@ -12,5 +12,10 @@ export const RQFetch = () => {
 
   if (!data) return <div>RQ loading...</div>;
 
-  return <p>React Query response: {data.name}</p>;
+  return (
+    <p>
+      React Query response:{" "}
+      <span className="text-red-600 font-semibold">{data.name}</span>
+    </p>
+  );
 };

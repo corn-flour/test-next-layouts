@@ -16,5 +16,10 @@ export const ClientAPIContent = () => {
     name: string;
   };
 
-  return <p>Client Data: {data.name}</p>;
+  return (
+    <p>
+      Client Data:{" "}
+      <span className="text-red-600 font-semibold">{data.name}</span>
+    </p>
+  );
 };
