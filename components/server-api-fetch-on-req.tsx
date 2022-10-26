@@ -4,7 +4,7 @@ import { getBaseUrl } from "../utils/get-base-url";
 
 // similar to getServerSideProps() in Next 12
 const fetchData = async () =>
-  fetch(`${getBaseUrl()}/api/hello`, {
+  fetch(`https://pokeapi.co/api/v2/pokemon/bulbasaur`, {
     cache: "no-store",
   }).then((res) => res.json());
 

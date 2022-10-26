@@ -8,7 +8,7 @@ const UseEffectClient = () => {
   useEffect(() => {
     let ignore = false;
     setData(null);
-    fetch(`${getBaseUrl()}/api/hello`)
+    fetch(`https://pokeapi.co/api/v2/pokemon/bulbasaur`)
       .then((res) => res.json())
       .then((res) => {
         if (!ignore) setData(res);
