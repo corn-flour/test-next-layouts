@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ClientAPIContent } from "../components/client-api-content";
+import { ClientWithStates } from "../components/client-with-states";
 import { ServerAPIContent } from "../components/server-api-content";
 import { ServerContentWithUse } from "../components/server-content-with-use";
 
@@ -14,6 +15,13 @@ export default function Home() {
           on dev.
         </p>
       </div>
+
+      <section>
+        <h2 className="text-2xl font-bold">Client component with states</h2>
+
+        <ClientWithStates />
+      </section>
+
       <section>
         <h2 className="text-2xl font-bold">Server API with async</h2>
         <p className="text-sm text-gray-600">
@@ -39,13 +47,15 @@ export default function Home() {
       <section>
         <h2 className="text-2xl font-bold">Client fetching with use()</h2>
         <p className="text-sm text-gray-600">
-          This apparently also becomes static on build?
-        </p>
-        <p className="text-sm text-gray-600">
           It currently does not work with actual fetch() though, which will
           cause infinite network calls. This might be why this becomes static?
         </p>
-        <ClientAPIContent />
+        <p className="text-red-600 font-bold underline text-sm">
+          The component is commented from this page because it seems to break
+          other client component on the same page, making them rerender
+          indefinitely.
+        </p>
+        {/* <ClientAPIContent /> */}
       </section>
 
       <section>
