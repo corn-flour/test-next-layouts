@@ -14,6 +14,10 @@ export default function Home() {
           all be static on build. The root loading component will only be shown
           on dev.
         </p>
+        <p className="text-sm text-gray-600">
+          The fake api call is used on some components because /api is not
+          available on build.
+        </p>
       </div>
 
       <section>
