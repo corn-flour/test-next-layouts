@@ -1,7 +1,10 @@
 // Specifying that this will need to be called on every request
+
+import { getBaseUrl } from "../utils/get-base-url";
+
 // similar to getServerSideProps() in Next 12
 const fetchData = async () =>
-  fetch("http://localhost:3000/api/hello", {
+  fetch(`${getBaseUrl()}/api/hello`, {
     cache: "no-store",
   }).then((res) => res.json());
 

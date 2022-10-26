@@ -1,9 +1,10 @@
 "use client";
 
 import { useQuery } from "@tanstack/react-query";
+import { getBaseUrl } from "../utils/get-base-url";
 
 const fetchData = async () =>
-  fetch("http://localhost:3000/api/hello", {
+  fetch(`${getBaseUrl()}/api/hello`, {
     cache: "no-store",
   }).then((res) => res.json());
 
