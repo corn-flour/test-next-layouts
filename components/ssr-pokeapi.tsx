@@ -1,7 +1,7 @@
 // Specifying that this will need to be called on every request
 
 // similar to getServerSideProps() in Next 12
-const fetchData = async () =>
+const fetchData = () =>
   fetch(`https://pokeapi.co/api/v2/pokemon/bulbasaur`, {
     cache: "no-store",
   }).then((res) => res.json());

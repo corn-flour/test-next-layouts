@@ -3,7 +3,7 @@
 import { getBaseUrl } from "../utils/get-base-url";
 
 // similar to getServerSideProps() in Next 12
-const fetchData = async () =>
+const fetchData = () =>
   fetch(`https://jsonplaceholder.typicode.com/todos/1`, {
     cache: "no-store",
   }).then((res) => res.json());

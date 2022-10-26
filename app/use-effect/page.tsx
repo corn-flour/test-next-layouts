@@ -23,7 +23,7 @@ const UseEffectClient = () => {
     <div>
       <h1 className="text-4xl font-bold">use effect fetch</h1>
       <p>
-        data: <span className="text-red-600 font-semibold">{data.name}</span>
+        data: <span className="text-red-600 font-semibold">{data.title}</span>
       </p>
     </div>
   );
