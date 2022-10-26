@@ -10,7 +10,7 @@ const fetchData = async () =>
 export const RQFetch = () => {
   const { data } = useQuery(["fetchdata"], fetchData);
 
-  if (!data) return <div>waiting...</div>;
+  if (!data) return <div>RQ loading...</div>;
 
   return <p>React Query response: {data.name}</p>;
 };
