@@ -4,7 +4,7 @@ export const getData = async () => {
     setTimeout(
       () =>
         resolve({
-          name: "Hello from server",
+          name: "Hello from fake server",
         }),
       1000
     );

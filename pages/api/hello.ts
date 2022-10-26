@@ -11,6 +11,6 @@ export default function handler(
   res: NextApiResponse<Data>
 ) {
   setTimeout(() => {
-    res.status(200).json({ name: "Hello from API" });
+    res.status(200).json({ name: "Hello from /api/hello" });
   }, 1000);
 }
