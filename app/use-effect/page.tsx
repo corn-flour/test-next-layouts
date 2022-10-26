@@ -8,7 +8,7 @@ const UseEffectClient = () => {
   useEffect(() => {
     let ignore = false;
     setData(null);
-    fetch(`https://pokeapi.co/api/v2/pokemon/bulbasaur`)
+    fetch(`https://jsonplaceholder.typicode.com/todos/1`)
       .then((res) => res.json())
       .then((res) => {
         if (!ignore) setData(res);
