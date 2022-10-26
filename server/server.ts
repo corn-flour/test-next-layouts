@@ -2,10 +2,6 @@ import { initTRPC } from "@trpc/server";
 
 const t = initTRPC.create();
 
-export const config = {
-  runtime: "experimental-edge",
-};
-
 export const appRouter = t.router({
   example: t.procedure.query(async () => {
     return new Promise<string>((resolve) => {
