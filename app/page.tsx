@@ -17,6 +17,10 @@ export default function Home() {
           The fake api call is used on some components because /api is not
           available on build.
         </p>
+        <p className="text-sm text-red-600 font-semibold italic">
+          None of the client component fetching works because fetch is not
+          supported on client components :(
+        </p>
       </div>
 
       <section>
