@@ -10,6 +10,9 @@ This is a [`create-next-app`](https://github.com/vercel/next.js/tree/canary/pack
 - Client component data fetching with RQ. This calls to the `/api/hello` endpoint
 - Client component data fetching with tRPC. This calls to the trpc `example` endpoint
 
+## Findings
+
+NONE OF THE CLIENT COMPONENT FETCHINGS WORK WHEN DEPLOYED TO VERCEL.
 ## Run
 This is only made to run locally using `pnpm`.
 
