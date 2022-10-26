@@ -2,6 +2,9 @@ lockfileVersion: 5.4
 
 specifiers:
   '@tanstack/react-query': ^4.13.0
+  '@trpc/client': 10.0.0-proxy-beta.26
+  '@trpc/react-query': 10.0.0-proxy-beta.26
+  '@trpc/server': 10.0.0-proxy-beta.26
   '@types/node': 18.11.5
   '@types/react': 18.0.23
   '@types/react-dom': 18.0.7
@@ -17,6 +20,9 @@ specifiers:
 
 dependencies:
   '@tanstack/react-query': 4.13.0_biqbaboplfbrettd7655fr4n2y
+  '@trpc/client': 10.0.0-proxy-beta.26_vu5ifdrqz65hq4g32lr3d5gbm4
+  '@trpc/react-query': 10.0.0-proxy-beta.26_ejrnvvywf3addmfe3uhnjqcfja
+  '@trpc/server': 10.0.0-proxy-beta.26
   next: 13.0.0_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -264,6 +270,34 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       use-sync-external-store: 1.2.0_react@18.2.0
+    dev: false
+
+  /@trpc/client/10.0.0-proxy-beta.26_vu5ifdrqz65hq4g32lr3d5gbm4:
+    resolution: {integrity: sha512-NTAqTtMCsB5DneoseK/oFYA9YkcIXHuYp1zojnhNpNA+HFzFvkDUHsKNmaPwd5c/KxLr7nP/jQvRzvVuZbgBng==}
+    peerDependencies:
+      '@trpc/server': 10.0.0-proxy-beta.26
+    dependencies:
+      '@trpc/server': 10.0.0-proxy-beta.26
+    dev: false
+
+  /@trpc/react-query/10.0.0-proxy-beta.26_ejrnvvywf3addmfe3uhnjqcfja:
+    resolution: {integrity: sha512-8/wDnNTNsn9ULXldegpqoNCgMMepVTU66t7ynyNFuSHE9eSd8J2sWKyEzK7lxVHa1kU+NjWhYoG+iDoXrKE6Cg==}
+    peerDependencies:
+      '@tanstack/react-query': ^4.3.8
+      '@trpc/client': 10.0.0-proxy-beta.26
+      '@trpc/server': 10.0.0-proxy-beta.26
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      '@tanstack/react-query': 4.13.0_biqbaboplfbrettd7655fr4n2y
+      '@trpc/client': 10.0.0-proxy-beta.26_vu5ifdrqz65hq4g32lr3d5gbm4
+      '@trpc/server': 10.0.0-proxy-beta.26
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@trpc/server/10.0.0-proxy-beta.26:
+    resolution: {integrity: sha512-XMpsQnH5s5Mn7CbRUMq2qT8TlHWNSygAizmpKnMhk3JDuLtqQNfxqGG41JzXiKNUcDrfcWt+MEyEa18sEjLYiA==}
     dev: false
 
   /@types/json5/0.0.29:

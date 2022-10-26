@@ -42,6 +42,12 @@ export default function Home() {
           Go to page
         </Link>
       </section>
+      <section>
+        <h2 className="text-2xl font-bold">Client side fetching with tRPC</h2>
+        <Link href="/trpc" className="text-blue-600 hover:text-blue-800">
+          Go to page
+        </Link>
+      </section>
     </div>
   );
 }

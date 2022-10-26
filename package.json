@@ -10,6 +10,9 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^4.13.0",
+    "@trpc/client": "10.0.0-proxy-beta.26",
+    "@trpc/react-query": "10.0.0-proxy-beta.26",
+    "@trpc/server": "10.0.0-proxy-beta.26",
     "next": "13.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
