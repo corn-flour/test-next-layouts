@@ -9,3 +9,10 @@ This is a [`create-next-app`](https://github.com/vercel/next.js/tree/canary/pack
 - Server component data fetching with async/await and cache: "no-store". This calls to the `/api/hello` endpoint
 - Client component data fetching with RQ. This calls to the `/api/hello` endpoint
 - Client component data fetching with tRPC. This calls to the trpc `example` endpoint
+
+## Run
+This is only made to run locally using `pnpm`.
+
+- Start dev server: `pnpm dev`
+- Build site: `pnpm build`
+- Serve built site: `pnpm start`
