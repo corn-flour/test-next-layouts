@@ -81,11 +81,11 @@ export default function Home() {
 
         <p className="text-sm text-gray-600">
           Apparently this fails to work. The fetch fails to parse to json on
-          server.
+          server. Link is disabled to avoid it trying to prefetch on vercel.
         </p>
-        <Link href="/pokeapi" className="text-blue-600 hover:text-blue-800">
+        {/* <Link href="/pokeapi" className="text-blue-600 hover:text-blue-800">
           Go to page
-        </Link>
+        </Link> */}
       </section>
       <section>
         <h2 className="text-2xl font-bold">
