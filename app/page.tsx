@@ -18,8 +18,7 @@ export default function Home() {
           available on build.
         </p>
         <p className="text-sm text-red-600 font-semibold italic">
-          None of the client component fetching works because fetch is not
-          supported on client components :(
+          Apparently it needs to be shared or something before it works?
         </p>
       </div>
 
