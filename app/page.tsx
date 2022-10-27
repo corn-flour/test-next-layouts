@@ -100,6 +100,19 @@ export default function Home() {
         </Link>
       </section>
       <section>
+        <h2 className="text-2xl font-bold">
+          Client side fetching with useEffect on /api
+        </h2>
+        <p className="text-sm text-gray-600">
+          This is classic client side fetching with useEffect() on /api/hello.
+        </p>
+        <Link
+          href="/use-effect-api"
+          className="text-blue-600 hover:text-blue-800">
+          Go to page
+        </Link>
+      </section>
+      <section>
         <h2 className="text-2xl font-bold">Client side fetching with RQ</h2>
         <p className="text-sm text-gray-600">
           This is (actual) client side fetching with react query. The layout of
