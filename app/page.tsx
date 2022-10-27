@@ -13,10 +13,6 @@ export default function Home() {
           all be static on build. The root loading component will only be shown
           on dev.
         </p>
-        <p className="text-sm text-gray-600">
-          The fake api call is used on some components because /api is not
-          available on build.
-        </p>
         <p className="text-sm text-red-600 font-semibold italic">
           Apparently it needs to be shared or something before it works?
         </p>
@@ -52,10 +48,6 @@ export default function Home() {
 
       <section>
         <h2 className="text-2xl font-bold">Client fetching with use()</h2>
-        <p className="text-sm text-gray-600">
-          It currently does not work with actual fetch() though, which will
-          cause infinite network calls. This might be why this becomes static?
-        </p>
         <p className="text-red-600 font-bold underline text-sm">
           The component is commented from this page because it seems to break
           other client component on the same page, making them rerender
@@ -114,8 +106,8 @@ export default function Home() {
       <section>
         <h2 className="text-2xl font-bold">Client side fetching with RQ</h2>
         <p className="text-sm text-gray-600">
-          This is (actual) client side fetching with react query. The layout of
-          it is also a client component since it needs context.
+          This is client side fetching with react query. The layout of it is
+          also a client component since it needs context.
         </p>
         <Link href="/react-query" className="text-blue-600 hover:text-blue-800">
           Go to page
@@ -124,7 +116,7 @@ export default function Home() {
       <section>
         <h2 className="text-2xl font-bold">Client side fetching with SWR</h2>
         <p className="text-sm text-gray-600">
-          This is (actual) client side fetching with SWR.
+          This is client side fetching with SWR.
         </p>
         <Link href="/swr" className="text-blue-600 hover:text-blue-800">
           Go to page
@@ -133,8 +125,8 @@ export default function Home() {
       <section>
         <h2 className="text-2xl font-bold">Client side fetching with tRPC</h2>
         <p className="text-sm text-gray-600">
-          This is also an (actual) client side fetching with tRPC. The layout of
-          it is also a client component since it needs context.
+          This is client side fetching with tRPC. The layout of it is also a
+          client component since it needs context.
         </p>
         <p className="text-sm text-gray-600">
           It is set up with the{" "}
