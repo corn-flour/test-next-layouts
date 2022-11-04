@@ -12,7 +12,7 @@ This is a [`create-next-app`](https://github.com/vercel/next.js/tree/canary/pack
 
 ## Findings
 
-NONE OF THE CLIENT COMPONENT FETCHINGS WORK WHEN DEPLOYED TO VERCEL.
+NONE OF THE CLIENT COMPONENT FETCHINGS WORK WHEN DEPLOYED TO VERCEL.(This seems to be fixed)
 ## Run
 This is only made to run locally using `pnpm`.
 
